@@ -1,0 +1,24 @@
+{
+  "require" : {
+    "components/jquery": "*",
+    "twbs/bootstrap": "4.3.*",
+    "components/font-awesome" : "5.*",
+    "ghunti/highcharts-php": "~3.0"
+  },
+  "require-dev" : {
+    "phing/phing": "2.*"
+  },
+  "autoload": {
+    "classmap": ["application/", "static/", "system/"]
+  },
+  "scripts": {
+    "post-update-cmd": [
+      "rm -rf static/css/bootstrap",
+      "cp -R vendor/twbs/bootstrap/dist static/css/bootstrap",
+      "rm -rf static/js/jquery",
+      "cp -R vendor/components/jquery static/js/jquery",
+      "rm -rf static/css/font-awesome",
+      "cp -R vendor/components/font-awesome static/css/font-awesome"
+    ]
+  }
+}

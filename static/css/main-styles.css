@@ -1,0 +1,93 @@
+@charset "utf-8";
+*
+{
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+    text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+
+a:visited, a:active
+{
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+    text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+
+/*********************************
+3. Header
+*********************************/
+
+.header
+{
+    position: fixed;
+    top: -5px;
+    left: 0;
+    width: 110%;
+    overflow: hidden;
+    height: 55px;
+    max-height: 55px;
+    background: #007DB8;
+    z-index: 200;
+    border-bottom: solid 1px transparent;
+    border-image: none;
+    border-image-slice: 1;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+.header_content
+{
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+.home_search {
+    margin-left: 0;
+    padding: 0;
+}
+.header-title {
+    font-size: 25px;
+    padding-top: 8px;
+    margin-left: 15px;
+    letter-spacing: 0.01em;
+    line-height: 2.5rem;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Metropolis', "Avenir Next", "Helvetica Neue", 'Arial', 'SansSerif';
+}
+.table {
+    font-size: 10px;
+}
+.label-select {
+    font-size: 15px;
+    margin-left: 5%;
+    margin-top: 70px;
+}
+select option {
+    font-size: 12px;
+}
+label {
+    font-size: 15px;
+}
+.form-control {
+    font-size: 12px;
+    width: 150px;
+}
+option:first-child {
+    font-weight:bold;
+}
+#time {
+    float: right;
+    margin-left: 35%;
+}
+
+#total-cases{
+    margin-left: 25%;
+}
